@@ -1,0 +1,97 @@
+<div class="doc-content theming">
+    
+    <p>Themes are implemented through a combination of Sass and JavaScript.</p>
+<h4 id="color-palettes">Color Palettes</h4>
+<p>Angular Material has implemented the spec&#39;s <a href="http://www.google.com/design/spec/style/color.html#color-ui-color-palette">color palettes</a> as Sass maps in <a href="https://github.com/angular/material/blob/master/src/core/style/color-palette.scss">src/core/style/color-palette.scss</a>. </p>
+<p>The palettes can be used in your own theme by calling Sass&#39;s <code>map-get</code> function:</p>
+<hljs lang="css">
+body {
+    background-color: map-get($color-red, &#39;500&#39;);
+}
+</hljs>
+
+<h4 id="global-style-variables">Global Style Variables</h4>
+<p>Most components&#39; colors are derived from variables in <a href="https://github.com/angular/material/blob/master/src/core/style/variables.scss">src/core/style/variables.scss</a>. Here are some guidelines regarding these variables:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$theme-name</td>
+<td>name of the theme, matching what will be used in the <code>md-theme</code> attribute</td>
+</tr>
+<tr>
+<td>$foreground-color-palette</td>
+<td>the color palette used for foreground colors (such as text, hints, and dividers)</td>
+</tr>
+<tr>
+<td>$background-color-palette</td>
+<td>the color palette used to determine the background color</td>
+</tr>
+<tr>
+<td>$primary-color-palette</td>
+<td>the primary color used for things like buttons, spinners, etc.</td>
+</tr>
+<tr>
+<td>$warn-color-palette</td>
+<td>the color palette used for warnings within the app</td>
+</tr>
+<tr>
+<td>$primary-color-palette-contrast-color</td>
+<td>the color used for text with a <code>primary-color</code> as a background</td>
+</tr>
+</tbody>
+</table>
+<h4 id="component-styles">Component Styles</h4>
+<p>Each component within Angular Material has custom styles specified in its <code>*-theme.scss</code> file. For example: </p>
+<ul>
+<li><a href="https://github.com/angular/material/blob/master/src/components/textField/textField-theme.scss">src/components/textField/textField-theme.scss</a>,</li>
+<li><a href="https://github.com/angular/material/blob/master/src/components/tabs/tabs-theme.scss">src/components/tabs/tabs-theme.scss</a>,</li>
+<li><a href="https://github.com/angular/material/blob/master/src/components/slider/slider-theme.scss">src/components/slider/slider-theme.scss</a>,</li>
+<li>etc.</li>
+</ul>
+<p>These component-specific styles are concatenated with <strong>variables.scss</strong> and <strong>color-palettes.scss</strong> to generate <code>/themes/default-theme.scss</code>.
+Additionally, each custom theme file in <code>/themes/*.scss</code> overrides the variables from default-theme and compiles as css to <code>/dist/themes/</code>.</p>
+<h4 id="javascript-features">JavaScript Features</h4>
+<p>Angular Material uses both an <code>md-theme</code> directive and an <code>$mdTheming</code> service to provide JavaScript support for theming.</p>
+<ul>
+<li><code>md-theme</code> is a directive that will set and watch the element&#39;s theme so all children elements can easily inherit the styles.</li>
+<li><code>$mdTheming</code> is an internal service that registers an element as &#39;themable&#39;: it can inherit the theme from parent elements.</li>
+</ul>
+<p><code>$mdTheming</code> will look up the DOM for the nearest parent with an <code>md-theme</code> attribute, and add that parent&#39;s theme class to its own element.</p>
+<hr>
+<p>Here is an <strong>simple</strong> directive that uses <strong>$mdTheming</strong> to add theming support within its feature set:</p>
+<hljs lang="js">
+app.directive(&#39;simpleDirective&#39;, function($mdTheming) {
+  return {
+    template: &#39;<h1>Hello world</h1>&#39;,
+    link: function(scope, element, attr) {
+      $mdTheming(element);
+      // Other features go here...
+    }
+  }
+});
+</hljs>
+
+<p>Here is an example of using the <strong>simple-directive</strong> and themes in the HTML:</p>
+<hljs lang="html">
+<div id="myForm" md-theme="green">
+  <simple-directive></simple-directive>
+</div>
+</hljs>
+
+<p>At runtime, both the elements <strong>div#myForm</strong> and <strong>simple-directive</strong> will now have a <code>class=&quot;md-green-theme&quot;</code> attribute. And if we want to override a child element as shown below:</p>
+<hljs lang="html">
+<div id="myForm" md-theme="green">
+  <simple-directive md-theme="yellow"></simple-directive>
+</div>
+</hljs>
+
+<p>At runtime, the elements <strong>div#myForm</strong> will have a <code>class=&quot;md-green-theme&quot;</code> attribute and the element <strong>simple-directive</strong> will now have a <code>class=&quot;md-yellow-theme&quot;</code> attribute.</p>
+
+    
+</div>

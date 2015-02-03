@@ -1,0 +1,7 @@
+.progressCirculardemoBasicUsage body {
+  padding: 20px; }
+.progressCirculardemoBasicUsage h4 {
+  margin: 10px 0; }
+.progressCirculardemoBasicUsage md-progress-circular {
+  padding-top: 10px;
+  margin-bottom: 20px; }

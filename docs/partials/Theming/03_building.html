@@ -1,0 +1,74 @@
+<div class="doc-content theming">
+    
+    <p>To build your own theme, you must write a <code>scss</code> file that overrides only the variables that you want to customize. </p>
+<p>The settings in your custom <code>scss</code> will override the settings in the <code>default-theme</code> to generate your custom theme. And using the conventions specified in <a href="http://www.google.com/design/spec/style/color.html#color-ui-color-palette">Material Colors</a>, developers can also [optionally] create 1-n <strong>named</strong> color palettes for use with Sass map().</p>
+<hr>
+<p>For example, let&#39;s prepare a custom theme file <code>themes/my-custom-theme.scss</code>:</p>
+<hljs lang="js">
+$theme-name: &#39;my-custom&#39;;
+
+// Named color palettes
+
+$my-color: (
+  &#39;50&#39;: #fde0dc,
+  &#39;100&#39;: #f9bdbb,
+  &#39;200&#39;: #f69988,
+  &#39;300&#39;: #f36c60,
+  &#39;400&#39;: #e84e40,
+  &#39;500&#39;: #e51c23,
+  &#39;600&#39;: #dd191d,
+  &#39;700&#39;: #d01716,
+  &#39;800&#39;: #c41411,
+  &#39;900&#39;: #b0120a,
+  &#39;A100&#39;: #ff7997,
+  &#39;A200&#39;: #ff5177,
+  &#39;A400&#39;: #ff2d6f,
+  &#39;A700&#39;: #e00032
+);
+
+$forest-green: (
+  &#39;50&#39;: #d0f8ce,
+  &#39;100&#39;: #a3e9a4,
+  &#39;200&#39;: #72d572,
+  &#39;300&#39;: #42bd41,
+  &#39;400&#39;: #2baf2b,
+  &#39;500&#39;: #259b24,
+  &#39;600&#39;: #0a8f08,
+  &#39;700&#39;: #0a7e07,
+  &#39;800&#39;: #056f00,
+  &#39;900&#39;: #0d5302,
+  &#39;A100&#39;: #a2f78d,
+  &#39;A200&#39;: #5af158,
+  &#39;A400&#39;: #14e715,
+  &#39;A700&#39;: #12c700
+);
+
+$primary-color-palette: $my-color;  // set the primary color palette for this theme
+$background-color-base: #333;
+
+$checkbox-color-palette: $forest-green; // set the &#39;forest green&#39; theme for the checkbox only
+$tabs-color-palette: $color-indigo; // set the &#39;indigo&#39; theme for the tabs only
+</hljs>
+
+<p>Then run the shell command <code>gulp build-theme -t my-custom</code>, or build everything with <code>gulp build</code>.
+These commands will create css files in <code>/dist/themes</code> matching the sass files found in <code>/themes/</code>.</p>
+<hr>
+<p>Now, in order to apply this custom theme to your application:</p>
+<ul>
+<li><p>Include the stylesheet in your html head:
+<p></p></p>
+<hljs lang="html">
+<link rel="stylesheet" href="themes/angular-material.css">
+<link rel="stylesheet" href="themes/my-custom-theme.css">
+</hljs>
+</li>
+<li><p>And set the <code>md-theme</code> attribute in your app&#39;s markup:</p>
+<hljs lang="html">
+<div ng-app="myApp" md-theme="my-custom">
+
+</div>
+</hljs></li>
+</ul>
+
+    
+</div>
