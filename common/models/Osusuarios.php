@@ -27,6 +27,7 @@ use yii\db\Expression;
  * @property string $usu_type
  * @property string $usu_size
  * @property string $uploadedFile
+ * @property string $passwd
  */
 class Osusuarios extends ActiveRecord implements IdentityInterface
 {
@@ -35,6 +36,7 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
 	const ESTADO_SUSPENDIDO = 2;
 	public $uploadedFile;
 	public $roles;
+    public $passwd;
 	
     /**
      * @return string Nombre de La Tabla
@@ -56,7 +58,7 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
             ['usu_activo','default', 'value' => self::ESTADO_ACTIVO],
             ['usu_activo','in', 'range' => [self::ESTADO_ACTIVO, self::ESTADO_INACTIVO,self::ESTADO_SUSPENDIDO]],
             [['usu_foto'], 'safe'],
-        	[['uploadedFile'], 'safe'],
+        	[['uploadedFile','passwd'], 'safe'],
             [['uploadedFile'], 'file', 'mimeTypes' => 'image/jpeg, image/gif, image/png'],
             [['usu_nomusu', 'usu_nombre', 'usu_clave', 'usu_name', 'usu_type', 'usu_size'], 'string', 'max' => 64],
             [['usu_token', 'usu_ultemp'], 'string', 'max' => 45]
@@ -83,6 +85,7 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
             'usu_type' => \Yii::t('app', 'Tipo de Archivo'),
             'usu_size' => \Yii::t('app', 'Tamaño del Archivo'),
             'uploadedFile' => \Yii::t('app', 'Fotografía'),
+            'passwd' => \Yii::t('app', 'Contraseña'),
         ];
     }
     
@@ -222,6 +225,11 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
     		//$this->usu_foto = addslashes(file_get_contents($file->tempName));
     		$this->usu_foto = file_get_contents($file->tempName);
     	}
+
+        if(!empty($this->passwd))
+        {
+            $this->setPassword($this->passwd);
+        }
     	
     	return parent::beforeSave($insert);
     }

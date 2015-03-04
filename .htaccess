@@ -38,7 +38,7 @@
 
 # Settings to hide index.php and ensure pretty urls
 RewriteEngine on
-RewriteBase /proyectos/orcsis/
+#RewriteBase /proyectos/orcsis/
 
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f

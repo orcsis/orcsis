@@ -1,3 +1,7 @@
+#Bootstrap Files
+/index.php
+/index-test.php
+
 # yii console command
 /yii
 

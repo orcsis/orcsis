@@ -38,12 +38,8 @@
 		"kartik-v/yii2-password": "dev-master",
 		"warrence/yii2-kartikgii": "dev-master",
 		"kartik-v/yii2-mpdf": "dev-master",
-		"bower-asset/angular": "1.3.4@stable",
-		"bower-asset/angular-animate": "1.3.4@stable",
-		"bower-asset/angular-aria": "1.3.4@stable",
-		"bower-asset/hammerjs": "2.0.4",
-		"bower-asset/angular-material" : ">=0.6.0",
-		"fxp/composer-asset-plugin": "1.0.0-beta4"
+		"fxp/composer-asset-plugin": "1.0.*@dev",
+		"kartik-v/yii2-popover-x": "*"
 	},
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
@@ -52,30 +48,13 @@
         "yiisoft/yii2-faker": "*",
 		"jamband/yii2-schemadump": "*"
 	},
-	"suggest": {
-		"codeception/codeception": "Codeception, 1.8.*@dev is currently works well with Yii.",
-		"codeception/specify": "BDD style code blocks for PHPUnit and Codeception",
-		"codeception/verify": "BDD Assertions for PHPUnit and Codeception"
-	},
-	"scripts": {
-		"post-create-project-cmd": [
-			"yii\\composer\\Installer::setPermission"
-		]
-	},
 	"config": {
 		"process-timeout": 1800
 	},
 	"extra": {
-		"writable": [
-			"backend/runtime",
-			"backend/assets",
-
-			"frontend/runtime",
-			"assets"
-		],
-		"asset-installer-paths": {
+        "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
-	}
+    }
 }

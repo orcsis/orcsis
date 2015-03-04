@@ -4,103 +4,8 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "27463da73c0f4c4a7402a26e5894e44f",
+    "hash": "dd9ee57d8458ad3679adddb9bcb31df7",
     "packages": [
-        {
-            "name": "bower-asset/angular",
-            "version": "v1.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/angular/bower-angular.git",
-                "reference": "34f023ddd2f1aa96b9df258a0bd9a71f36a26355"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/34f023ddd2f1aa96b9df258a0bd9a71f36a26355",
-                "reference": "34f023ddd2f1aa96b9df258a0bd9a71f36a26355",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "./angular.js",
-                "bower-asset-ignore": []
-            }
-        },
-        {
-            "name": "bower-asset/angular-animate",
-            "version": "v1.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/angular/bower-angular-animate.git",
-                "reference": "b958e4c77009af2b655ea9340bf9f69f7cff8199"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-animate/zipball/b958e4c77009af2b655ea9340bf9f69f7cff8199",
-                "reference": "b958e4c77009af2b655ea9340bf9f69f7cff8199",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/angular": "1.3.4"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "./angular-animate.js",
-                "bower-asset-ignore": []
-            }
-        },
-        {
-            "name": "bower-asset/angular-aria",
-            "version": "v1.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/angular/bower-angular-aria.git",
-                "reference": "be62c3f213f3853b572d43a0c061416d970b1eef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-aria/zipball/be62c3f213f3853b572d43a0c061416d970b1eef",
-                "reference": "be62c3f213f3853b572d43a0c061416d970b1eef",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/angular": "1.3.4"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "./angular-aria.js",
-                "bower-asset-ignore": []
-            }
-        },
-        {
-            "name": "bower-asset/angular-material",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/angular/bower-material.git",
-                "reference": "bc5dad41259d2aced6c6706e24b5d21abda960c2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-material/zipball/bc5dad41259d2aced6c6706e24b5d21abda960c2",
-                "reference": "bc5dad41259d2aced6c6706e24b5d21abda960c2",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/angular": "dev-1.3.x|1.3.x",
-                "bower-asset/angular-animate": "dev-1.3.x|1.3.x",
-                "bower-asset/angular-aria": "dev-1.3.x|1.3.x",
-                "bower-asset/hammerjs": ">=2.0.2,<2.1"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "angular-material.js",
-                    "angular-material.css"
-                ]
-            },
-            "time": "2014-11-25 01:52:52"
-        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.2",
@@ -153,29 +58,6 @@
             ]
         },
         {
-            "name": "bower-asset/hammerjs",
-            "version": "2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hammerjs/hammer.js.git",
-                "reference": "702e675f1bab25d5f6997989d43aaa5eae384f54"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hammerjs/hammer.js/zipball/702e675f1bab25d5f6997989d43aaa5eae384f54",
-                "reference": "702e675f1bab25d5f6997989d43aaa5eae384f54",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "hammer.js",
-                "bower-asset-ignore": [
-                    "tests",
-                    "src"
-                ]
-            }
-        },
-        {
             "name": "bower-asset/jquery",
             "version": "2.1.3",
             "source": {
@@ -220,16 +102,16 @@
         },
         {
             "name": "bower-asset/jquery-ui",
-            "version": "1.11.2",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jqueryui.git",
-                "reference": "396781474d936959061271505f506b78398fe6a2"
+                "reference": "7e2d6bec1c729925d9ad7c0c9ab4b561174efa99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jqueryui/zipball/396781474d936959061271505f506b78398fe6a2",
-                "reference": "396781474d936959061271505f506b78398fe6a2",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/7e2d6bec1c729925d9ad7c0c9ab4b561174efa99",
+                "reference": "7e2d6bec1c729925d9ad7c0c9ab4b561174efa99",
                 "shasum": ""
             },
             "require": {
@@ -245,16 +127,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.59",
+            "version": "3.1.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "6fcd2cf28ee111f8aadcd42a1b8d43d6f7a5c0ba"
+                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/6fcd2cf28ee111f8aadcd42a1b8d43d6f7a5c0ba",
-                "reference": "6fcd2cf28ee111f8aadcd42a1b8d43d6f7a5c0ba",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
+                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
                 "shasum": ""
             },
             "require": {
@@ -329,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "f07ce95f6098c0bd5421789a20789f39a19be73b"
+                "reference": "b7491aec282bfd2e78faf33b18df865299b88d36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/f07ce95f6098c0bd5421789a20789f39a19be73b",
-                "reference": "f07ce95f6098c0bd5421789a20789f39a19be73b",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/b7491aec282bfd2e78faf33b18df865299b88d36",
+                "reference": "b7491aec282bfd2e78faf33b18df865299b88d36",
                 "shasum": ""
             },
             "require": {
@@ -345,10 +227,20 @@
                 "bower-asset-main": "./jquery.pjax.js",
                 "bower-asset-ignore": [
                     ".travis.yml",
+                    "Gemfile",
+                    "Gemfile.lock",
+                    "vendor/",
+                    "script/",
                     "test/"
-                ]
+                ],
+                "branch-alias": {
+                    "dev-master": "2.0.2-dev"
+                }
             },
-            "time": "2014-10-10 13:44:50"
+            "license": [
+                "MIT"
+            ],
+            "time": "2015-01-22 20:06:42"
         },
         {
             "name": "cebe/markdown",
@@ -444,8 +336,7 @@
                 {
                     "name": "Edward Z. Yang",
                     "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com",
-                    "role": "Developer"
+                    "homepage": "http://ezyang.com"
                 }
             ],
             "description": "Standards compliant HTML filter written in PHP",
@@ -461,12 +352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+                "reference": "c79474df99e572e230a7e16f06a6a4605c00b18f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/c79474df99e572e230a7e16f06a6a4605c00b18f",
+                "reference": "c79474df99e572e230a7e16f06a6a4605c00b18f",
                 "shasum": ""
             },
             "require-dev": {
@@ -501,20 +392,20 @@
                 "font",
                 "icon"
             ],
-            "time": "2015-01-22 18:09:42"
+            "time": "2015-02-13 23:15:18"
         },
         {
             "name": "fxp/composer-asset-plugin",
-            "version": "v1.0.0-beta4",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francoispluchino/composer-asset-plugin.git",
-                "reference": "06d8b3ebf69e79a511657716beab5a98e3cf1452"
+                "reference": "8a66ca121d147a84d7608dee26dd091de70d9f71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/06d8b3ebf69e79a511657716beab5a98e3cf1452",
-                "reference": "06d8b3ebf69e79a511657716beab5a98e3cf1452",
+                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/8a66ca121d147a84d7608dee26dd091de70d9f71",
+                "reference": "8a66ca121d147a84d7608dee26dd091de70d9f71",
                 "shasum": ""
             },
             "require": {
@@ -557,7 +448,7 @@
                 "npm",
                 "package"
             ],
-            "time": "2014-11-04 16:35:17"
+            "time": "2015-02-13 09:47:31"
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
@@ -565,12 +456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "6d681f8b4dc1b9e4478c851d0e806ff810aa55c5"
+                "reference": "22bbcc16437d32626b24d004a5bf8524f81e8b2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/6d681f8b4dc1b9e4478c851d0e806ff810aa55c5",
-                "reference": "6d681f8b4dc1b9e4478c851d0e806ff810aa55c5",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/22bbcc16437d32626b24d004a5bf8524f81e8b2c",
+                "reference": "22bbcc16437d32626b24d004a5bf8524f81e8b2c",
                 "shasum": ""
             },
             "type": "library",
@@ -605,7 +496,51 @@
                 "progress",
                 "upload"
             ],
-            "time": "2015-02-01 23:55:15"
+            "time": "2015-03-02 08:33:40"
+        },
+        {
+            "name": "kartik-v/bootstrap-popover-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-popover-x.git",
+                "reference": "b1d641463d2a287efc10332b8b9aab3508aefa79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/b1d641463d2a287efc10332b8b9aab3508aefa79",
+                "reference": "b1d641463d2a287efc10332b8b9aab3508aefa79",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\popover\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Bootstrap Popover Extended - Popover with modal behavior, styling enhancements and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-popover-x",
+            "keywords": [
+                "bootstrap",
+                "extended",
+                "jquery",
+                "modal",
+                "modal-popover",
+                "popover",
+                "popover-x"
+            ],
+            "time": "2015-02-17 11:51:36"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -613,12 +548,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
-                "reference": "dd56000e6d5c075d39fe40112b0158f42d624deb"
+                "reference": "c015b2b1c16772bcaa576c5f0a89a76c7226fe41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/dd56000e6d5c075d39fe40112b0158f42d624deb",
-                "reference": "dd56000e6d5c075d39fe40112b0158f42d624deb",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/c015b2b1c16772bcaa576c5f0a89a76c7226fe41",
+                "reference": "c015b2b1c16772bcaa576c5f0a89a76c7226fe41",
                 "shasum": ""
             },
             "type": "library",
@@ -646,7 +581,7 @@
                 "jquery",
                 "star"
             ],
-            "time": "2015-02-01 01:11:43"
+            "time": "2015-02-17 12:08:20"
         },
         {
             "name": "kartik-v/dependent-dropdown",
@@ -696,12 +631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/mpdf.git",
-                "reference": "d11e7075e38433a4a5e7dae94caf20f85ee11179"
+                "reference": "a9d6960e47b4c8d28ba72c229c13a6444d8e2658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/mpdf/zipball/d11e7075e38433a4a5e7dae94caf20f85ee11179",
-                "reference": "d11e7075e38433a4a5e7dae94caf20f85ee11179",
+                "url": "https://api.github.com/repos/kartik-v/mpdf/zipball/a9d6960e47b4c8d28ba72c229c13a6444d8e2658",
+                "reference": "a9d6960e47b4c8d28ba72c229c13a6444d8e2658",
                 "shasum": ""
             },
             "require": {
@@ -731,7 +666,7 @@
                 "php",
                 "utf-8"
             ],
-            "time": "2014-11-10 10:00:01"
+            "time": "2015-02-18 16:00:43"
         },
         {
             "name": "kartik-v/php-date-formatter",
@@ -739,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/php-date-formatter.git",
-                "reference": "41891ddc734cad7197c519ae19fb62567282b00e"
+                "reference": "28b4fa080e0548dbe8836cb158b90445acc9303b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/php-date-formatter/zipball/41891ddc734cad7197c519ae19fb62567282b00e",
-                "reference": "41891ddc734cad7197c519ae19fb62567282b00e",
+                "url": "https://api.github.com/repos/kartik-v/php-date-formatter/zipball/28b4fa080e0548dbe8836cb158b90445acc9303b",
+                "reference": "28b4fa080e0548dbe8836cb158b90445acc9303b",
                 "shasum": ""
             },
             "type": "library",
@@ -776,7 +711,7 @@
                 "php-date-formatter.js",
                 "time"
             ],
-            "time": "2014-11-09 18:22:47"
+            "time": "2015-02-24 10:46:33"
         },
         {
             "name": "kartik-v/strength-meter",
@@ -784,12 +719,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/strength-meter.git",
-                "reference": "ccbe089f80d6f50655aed577905f570cb5f17c34"
+                "reference": "5b8616f87131af52ecc85a2bf010642112925edd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/strength-meter/zipball/ccbe089f80d6f50655aed577905f570cb5f17c34",
-                "reference": "ccbe089f80d6f50655aed577905f570cb5f17c34",
+                "url": "https://api.github.com/repos/kartik-v/strength-meter/zipball/5b8616f87131af52ecc85a2bf010642112925edd",
+                "reference": "5b8616f87131af52ecc85a2bf010642112925edd",
                 "shasum": ""
             },
             "type": "library",
@@ -818,7 +753,7 @@
                 "password",
                 "strength"
             ],
-            "time": "2014-12-12 18:25:25"
+            "time": "2015-03-02 17:50:48"
         },
         {
             "name": "kartik-v/yii2-builder",
@@ -826,12 +761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-builder.git",
-                "reference": "a9af9bdf9cc1f97ee6a262dbd801d0cdac97a8c8"
+                "reference": "fe29264bcd41a71dedfb9b31f14ac8451b47efbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-builder/zipball/a9af9bdf9cc1f97ee6a262dbd801d0cdac97a8c8",
-                "reference": "a9af9bdf9cc1f97ee6a262dbd801d0cdac97a8c8",
+                "url": "https://api.github.com/repos/kartik-v/yii2-builder/zipball/fe29264bcd41a71dedfb9b31f14ac8451b47efbb",
+                "reference": "fe29264bcd41a71dedfb9b31f14ac8451b47efbb",
                 "shasum": ""
             },
             "require": {
@@ -865,7 +800,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-28 03:40:28"
+            "time": "2015-03-01 18:05:50"
         },
         {
             "name": "kartik-v/yii2-context-menu",
@@ -873,12 +808,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-context-menu.git",
-                "reference": "872bdd799d59b300c98a1068d34e6cba9b6156eb"
+                "reference": "fdcf114f4e61d0085fc316f07925035064c178c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-context-menu/zipball/872bdd799d59b300c98a1068d34e6cba9b6156eb",
-                "reference": "872bdd799d59b300c98a1068d34e6cba9b6156eb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-context-menu/zipball/fdcf114f4e61d0085fc316f07925035064c178c1",
+                "reference": "fdcf114f4e61d0085fc316f07925035064c178c1",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +847,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-10 10:06:10"
+            "time": "2015-02-25 19:36:01"
         },
         {
             "name": "kartik-v/yii2-datecontrol",
@@ -920,12 +855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-datecontrol.git",
-                "reference": "521b11aae56f2d1b038e6df427028c7161a807db"
+                "reference": "e64aec336c3fc8eb22e056749a6cc35e18997e19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-datecontrol/zipball/521b11aae56f2d1b038e6df427028c7161a807db",
-                "reference": "521b11aae56f2d1b038e6df427028c7161a807db",
+                "url": "https://api.github.com/repos/kartik-v/yii2-datecontrol/zipball/e64aec336c3fc8eb22e056749a6cc35e18997e19",
+                "reference": "e64aec336c3fc8eb22e056749a6cc35e18997e19",
                 "shasum": ""
             },
             "require": {
@@ -959,7 +894,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-01-24 20:01:12"
+            "time": "2015-02-25 19:38:14"
         },
         {
             "name": "kartik-v/yii2-detail-view",
@@ -967,12 +902,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-detail-view.git",
-                "reference": "1170ad07fd8d96e5eaab8bef2755d83879a79e75"
+                "reference": "9368466d74434c0135b8bc42544efc511fcc09ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/1170ad07fd8d96e5eaab8bef2755d83879a79e75",
-                "reference": "1170ad07fd8d96e5eaab8bef2755d83879a79e75",
+                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/9368466d74434c0135b8bc42544efc511fcc09ad",
+                "reference": "9368466d74434c0135b8bc42544efc511fcc09ad",
                 "shasum": ""
             },
             "require": {
@@ -1007,7 +942,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-27 18:40:30"
+            "time": "2015-03-02 13:30:23"
         },
         {
             "name": "kartik-v/yii2-dropdown-x",
@@ -1015,12 +950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-dropdown-x.git",
-                "reference": "4689a7635e290ef1b71eb4f0962e3b77e347b6fe"
+                "reference": "db59ac035d4ca411d55737065f3d6cbd89f75b2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-dropdown-x/zipball/4689a7635e290ef1b71eb4f0962e3b77e347b6fe",
-                "reference": "4689a7635e290ef1b71eb4f0962e3b77e347b6fe",
+                "url": "https://api.github.com/repos/kartik-v/yii2-dropdown-x/zipball/db59ac035d4ca411d55737065f3d6cbd89f75b2a",
+                "reference": "db59ac035d4ca411d55737065f3d6cbd89f75b2a",
                 "shasum": ""
             },
             "require": {
@@ -1054,7 +989,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-12-08 04:31:32"
+            "time": "2015-02-25 19:45:35"
         },
         {
             "name": "kartik-v/yii2-dynagrid",
@@ -1062,12 +997,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-dynagrid.git",
-                "reference": "21934b3b75493b5ae570cc41969a2f86cb5f3c16"
+                "reference": "fba79ea8c42af956a960a1621a5888c60175a93e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-dynagrid/zipball/21934b3b75493b5ae570cc41969a2f86cb5f3c16",
-                "reference": "21934b3b75493b5ae570cc41969a2f86cb5f3c16",
+                "url": "https://api.github.com/repos/kartik-v/yii2-dynagrid/zipball/fba79ea8c42af956a960a1621a5888c60175a93e",
+                "reference": "fba79ea8c42af956a960a1621a5888c60175a93e",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1044,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-12 12:04:53"
+            "time": "2015-02-25 19:46:25"
         },
         {
             "name": "kartik-v/yii2-grid",
@@ -1117,12 +1052,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "d447879b97fe1b5145bf545614c86ee4f1fddb75"
+                "reference": "0c5b604240d1afb0559f95994368cc3bbf8616e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/d447879b97fe1b5145bf545614c86ee4f1fddb75",
-                "reference": "d447879b97fe1b5145bf545614c86ee4f1fddb75",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/0c5b604240d1afb0559f95994368cc3bbf8616e3",
+                "reference": "0c5b604240d1afb0559f95994368cc3bbf8616e3",
                 "shasum": ""
             },
             "require": {
@@ -1153,7 +1088,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-02-01 15:26:09"
+            "time": "2015-03-03 14:23:36"
         },
         {
             "name": "kartik-v/yii2-helpers",
@@ -1161,12 +1096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-helpers.git",
-                "reference": "379b5f20d511fe13b1c579a33adffe6dd2b6f560"
+                "reference": "23342502c13da11edf56ce8f8881a9bde58c9d59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-helpers/zipball/379b5f20d511fe13b1c579a33adffe6dd2b6f560",
-                "reference": "379b5f20d511fe13b1c579a33adffe6dd2b6f560",
+                "url": "https://api.github.com/repos/kartik-v/yii2-helpers/zipball/23342502c13da11edf56ce8f8881a9bde58c9d59",
+                "reference": "23342502c13da11edf56ce8f8881a9bde58c9d59",
                 "shasum": ""
             },
             "require": {
@@ -1199,7 +1134,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-01-27 18:55:13"
+            "time": "2015-02-26 14:24:40"
         },
         {
             "name": "kartik-v/yii2-icons",
@@ -1207,12 +1142,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-icons.git",
-                "reference": "a2d145c95b5e0b1c9fc9791bb15616d626a27dad"
+                "reference": "29e72f6e432af729f6d6a6ccaceb0d1bc8d81e55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-icons/zipball/a2d145c95b5e0b1c9fc9791bb15616d626a27dad",
-                "reference": "a2d145c95b5e0b1c9fc9791bb15616d626a27dad",
+                "url": "https://api.github.com/repos/kartik-v/yii2-icons/zipball/29e72f6e432af729f6d6a6ccaceb0d1bc8d81e55",
+                "reference": "29e72f6e432af729f6d6a6ccaceb0d1bc8d81e55",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1181,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-01-12 17:44:29"
+            "time": "2015-02-26 14:25:16"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1254,12 +1189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "02ca53ac2ce4d16c9874529349a713c1db4864ea"
+                "reference": "b03c272b138426e59b8e96b75647a5d7ae5e7589"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/02ca53ac2ce4d16c9874529349a713c1db4864ea",
-                "reference": "02ca53ac2ce4d16c9874529349a713c1db4864ea",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/b03c272b138426e59b8e96b75647a5d7ae5e7589",
+                "reference": "b03c272b138426e59b8e96b75647a5d7ae5e7589",
                 "shasum": ""
             },
             "require": {
@@ -1292,7 +1227,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-02-01 18:23:30"
+            "time": "2015-03-02 13:00:04"
         },
         {
             "name": "kartik-v/yii2-label-inplace",
@@ -1300,12 +1235,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-label-inplace.git",
-                "reference": "8d62816d2363928952ad9d08cbd357d906b9af66"
+                "reference": "48741af10135c76b773ce09b8b77998dbbcbb644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-label-inplace/zipball/8d62816d2363928952ad9d08cbd357d906b9af66",
-                "reference": "8d62816d2363928952ad9d08cbd357d906b9af66",
+                "url": "https://api.github.com/repos/kartik-v/yii2-label-inplace/zipball/48741af10135c76b773ce09b8b77998dbbcbb644",
+                "reference": "48741af10135c76b773ce09b8b77998dbbcbb644",
                 "shasum": ""
             },
             "require": {
@@ -1340,7 +1275,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-12-06 11:18:53"
+            "time": "2015-02-26 15:03:45"
         },
         {
             "name": "kartik-v/yii2-markdown",
@@ -1348,12 +1283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-markdown.git",
-                "reference": "5974696ccd1710b0f35dccfe509e7a01c6b3c1f7"
+                "reference": "8e3d233af93d306a978c5a4f5a794025ccd2020f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-markdown/zipball/5974696ccd1710b0f35dccfe509e7a01c6b3c1f7",
-                "reference": "5974696ccd1710b0f35dccfe509e7a01c6b3c1f7",
+                "url": "https://api.github.com/repos/kartik-v/yii2-markdown/zipball/8e3d233af93d306a978c5a4f5a794025ccd2020f",
+                "reference": "8e3d233af93d306a978c5a4f5a794025ccd2020f",
                 "shasum": ""
             },
             "require": {
@@ -1392,7 +1327,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-01-12 11:42:03"
+            "time": "2015-02-26 15:05:16"
         },
         {
             "name": "kartik-v/yii2-mpdf",
@@ -1400,12 +1335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-mpdf.git",
-                "reference": "2cc4168f1fdf73de1041f5699583865f4a2f9200"
+                "reference": "cd6afdcc03b6657ca92d1f4bc4f3c10e630d34e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-mpdf/zipball/2cc4168f1fdf73de1041f5699583865f4a2f9200",
-                "reference": "2cc4168f1fdf73de1041f5699583865f4a2f9200",
+                "url": "https://api.github.com/repos/kartik-v/yii2-mpdf/zipball/cd6afdcc03b6657ca92d1f4bc4f3c10e630d34e3",
+                "reference": "cd6afdcc03b6657ca92d1f4bc4f3c10e630d34e3",
                 "shasum": ""
             },
             "require": {
@@ -1439,7 +1374,7 @@
                 "utf8",
                 "yii2"
             ],
-            "time": "2015-01-21 12:20:46"
+            "time": "2015-02-26 15:09:02"
         },
         {
             "name": "kartik-v/yii2-nav-x",
@@ -1447,12 +1382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-nav-x.git",
-                "reference": "b4b03037131d9a8b29791984b80bf062bdb814e3"
+                "reference": "aa76117a4bb03d29636d7ba614affdeafff04193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-nav-x/zipball/b4b03037131d9a8b29791984b80bf062bdb814e3",
-                "reference": "b4b03037131d9a8b29791984b80bf062bdb814e3",
+                "url": "https://api.github.com/repos/kartik-v/yii2-nav-x/zipball/aa76117a4bb03d29636d7ba614affdeafff04193",
+                "reference": "aa76117a4bb03d29636d7ba614affdeafff04193",
                 "shasum": ""
             },
             "require": {
@@ -1486,7 +1421,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-12-06 18:38:52"
+            "time": "2015-02-26 15:06:52"
         },
         {
             "name": "kartik-v/yii2-password",
@@ -1494,12 +1429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-password.git",
-                "reference": "f04cb2e1866e120b7e7680a6ba1b39806ebd91eb"
+                "reference": "255e290d0f0da958dd3d692f160f6b75787503b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-password/zipball/f04cb2e1866e120b7e7680a6ba1b39806ebd91eb",
-                "reference": "f04cb2e1866e120b7e7680a6ba1b39806ebd91eb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-password/zipball/255e290d0f0da958dd3d692f160f6b75787503b5",
+                "reference": "255e290d0f0da958dd3d692f160f6b75787503b5",
                 "shasum": ""
             },
             "require": {
@@ -1537,7 +1472,55 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-01-12 10:19:25"
+            "time": "2015-03-02 17:54:53"
+        },
+        {
+            "name": "kartik-v/yii2-popover-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-popover-x.git",
+                "reference": "b41d2281a26d5158969778374bda15df4cd6e19e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-popover-x/zipball/b41d2281a26d5158969778374bda15df4cd6e19e",
+                "reference": "b41d2281a26d5158969778374bda15df4cd6e19e",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-popover-x": "*",
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\popover\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An extended bootstrap 3.0 popover widget which combines both the bootstrap popover and modal features and includes various new styling enhancements.",
+            "homepage": "https://github.com/kartik-v/yii2-popover-x",
+            "keywords": [
+                "bootstrap",
+                "extended",
+                "jquery",
+                "modal",
+                "modal-popover",
+                "popover",
+                "popover-x"
+            ],
+            "time": "2015-02-26 15:17:39"
         },
         {
             "name": "kartik-v/yii2-sortable",
@@ -1545,12 +1528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-sortable.git",
-                "reference": "a20621ab225df1e2d48d00128176e708a5ec0a9a"
+                "reference": "3da7bc6593cc40b8283b397a987b42421f2c825f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-sortable/zipball/a20621ab225df1e2d48d00128176e708a5ec0a9a",
-                "reference": "a20621ab225df1e2d48d00128176e708a5ec0a9a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-sortable/zipball/3da7bc6593cc40b8283b397a987b42421f2c825f",
+                "reference": "3da7bc6593cc40b8283b397a987b42421f2c825f",
                 "shasum": ""
             },
             "require": {
@@ -1584,7 +1567,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-02-01 17:24:05"
+            "time": "2015-02-26 15:20:36"
         },
         {
             "name": "kartik-v/yii2-widget-activeform",
@@ -1592,12 +1575,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
-                "reference": "82cc3844a6a001d94a2eeddcf58d0be3fde154e1"
+                "reference": "b73b4ec48f0a995f2fa54d0c7a3b1ca30e24615a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/82cc3844a6a001d94a2eeddcf58d0be3fde154e1",
-                "reference": "82cc3844a6a001d94a2eeddcf58d0be3fde154e1",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/b73b4ec48f0a995f2fa54d0c7a3b1ca30e24615a",
+                "reference": "b73b4ec48f0a995f2fa54d0c7a3b1ca30e24615a",
                 "shasum": ""
             },
             "require": {
@@ -1631,7 +1614,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-29 14:08:48"
+            "time": "2015-02-26 15:40:02"
         },
         {
             "name": "kartik-v/yii2-widget-affix",
@@ -1639,12 +1622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-affix.git",
-                "reference": "d89c063ae485e8ab14c34b8dee86019911c8b288"
+                "reference": "b376ccbff01d3af6862180fa62d508acbf136601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-affix/zipball/d89c063ae485e8ab14c34b8dee86019911c8b288",
-                "reference": "d89c063ae485e8ab14c34b8dee86019911c8b288",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-affix/zipball/b376ccbff01d3af6862180fa62d508acbf136601",
+                "reference": "b376ccbff01d3af6862180fa62d508acbf136601",
                 "shasum": ""
             },
             "require": {
@@ -1680,7 +1663,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:52:08"
+            "time": "2015-02-26 15:42:18"
         },
         {
             "name": "kartik-v/yii2-widget-alert",
@@ -1688,12 +1671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-alert.git",
-                "reference": "5b312eeaf429c2affe6a96217d79f0c761159643"
+                "reference": "1fdb2859b90d3b0e82cdc1f4effd06b394cde3c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-alert/zipball/5b312eeaf429c2affe6a96217d79f0c761159643",
-                "reference": "5b312eeaf429c2affe6a96217d79f0c761159643",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-alert/zipball/1fdb2859b90d3b0e82cdc1f4effd06b394cde3c3",
+                "reference": "1fdb2859b90d3b0e82cdc1f4effd06b394cde3c3",
                 "shasum": ""
             },
             "require": {
@@ -1730,7 +1713,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-19 06:44:12"
+            "time": "2015-02-26 15:45:11"
         },
         {
             "name": "kartik-v/yii2-widget-colorinput",
@@ -1738,12 +1721,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-colorinput.git",
-                "reference": "956951b3d6176942658ea1cd9fb850e1056ed4d5"
+                "reference": "58e3ef0d6f953741e4d85b4da9f814ee2db4394c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-colorinput/zipball/956951b3d6176942658ea1cd9fb850e1056ed4d5",
-                "reference": "956951b3d6176942658ea1cd9fb850e1056ed4d5",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-colorinput/zipball/58e3ef0d6f953741e4d85b4da9f814ee2db4394c",
+                "reference": "58e3ef0d6f953741e4d85b4da9f814ee2db4394c",
                 "shasum": ""
             },
             "require": {
@@ -1779,7 +1762,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:53:04"
+            "time": "2015-02-26 15:47:09"
         },
         {
             "name": "kartik-v/yii2-widget-datepicker",
@@ -1787,12 +1770,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
-                "reference": "b10b054c65a0bdc98a34e0a23fc19fa48fd1da2a"
+                "reference": "3fb31048bb70ebddf94a827aec77779835305629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/b10b054c65a0bdc98a34e0a23fc19fa48fd1da2a",
-                "reference": "b10b054c65a0bdc98a34e0a23fc19fa48fd1da2a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/3fb31048bb70ebddf94a827aec77779835305629",
+                "reference": "3fb31048bb70ebddf94a827aec77779835305629",
                 "shasum": ""
             },
             "require": {
@@ -1828,7 +1811,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-25 16:29:29"
+            "time": "2015-03-02 13:03:59"
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
@@ -1836,12 +1819,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datetimepicker.git",
-                "reference": "b7950105cfc6c92727cc1d48655ef102066b7f95"
+                "reference": "586ca7b397561f5a1ddf4f62920d95f6f89a251e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datetimepicker/zipball/b7950105cfc6c92727cc1d48655ef102066b7f95",
-                "reference": "b7950105cfc6c92727cc1d48655ef102066b7f95",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datetimepicker/zipball/586ca7b397561f5a1ddf4f62920d95f6f89a251e",
+                "reference": "586ca7b397561f5a1ddf4f62920d95f6f89a251e",
                 "shasum": ""
             },
             "require": {
@@ -1877,7 +1860,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-29 14:04:20"
+            "time": "2015-03-02 13:07:34"
         },
         {
             "name": "kartik-v/yii2-widget-depdrop",
@@ -1885,12 +1868,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-depdrop.git",
-                "reference": "6979bcecf3f7872be3e557ce6d1828168415212b"
+                "reference": "655bac515df3ba8d8b92991cb0b2e58ad7bb0a6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-depdrop/zipball/6979bcecf3f7872be3e557ce6d1828168415212b",
-                "reference": "6979bcecf3f7872be3e557ce6d1828168415212b",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-depdrop/zipball/655bac515df3ba8d8b92991cb0b2e58ad7bb0a6e",
+                "reference": "655bac515df3ba8d8b92991cb0b2e58ad7bb0a6e",
                 "shasum": ""
             },
             "require": {
@@ -1926,7 +1909,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:14:45"
+            "time": "2015-02-26 15:51:32"
         },
         {
             "name": "kartik-v/yii2-widget-fileinput",
@@ -1934,12 +1917,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-                "reference": "9c63919c82f0c97a88d2f629bbc9de078a60029a"
+                "reference": "d1d89f26785cfc81e1e555b7315a460b6e7e8174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/9c63919c82f0c97a88d2f629bbc9de078a60029a",
-                "reference": "9c63919c82f0c97a88d2f629bbc9de078a60029a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/d1d89f26785cfc81e1e555b7315a460b6e7e8174",
+                "reference": "d1d89f26785cfc81e1e555b7315a460b6e7e8174",
                 "shasum": ""
             },
             "require": {
@@ -1976,7 +1959,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-12-20 03:17:37"
+            "time": "2015-02-26 16:15:46"
         },
         {
             "name": "kartik-v/yii2-widget-growl",
@@ -1984,12 +1967,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-growl.git",
-                "reference": "4a8def348feec6c8fda0f0461c5a857570ce7453"
+                "reference": "1ee0111eb53096aa000e70fe9e6990643ba3d0d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-growl/zipball/4a8def348feec6c8fda0f0461c5a857570ce7453",
-                "reference": "4a8def348feec6c8fda0f0461c5a857570ce7453",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-growl/zipball/1ee0111eb53096aa000e70fe9e6990643ba3d0d7",
+                "reference": "1ee0111eb53096aa000e70fe9e6990643ba3d0d7",
                 "shasum": ""
             },
             "require": {
@@ -2025,7 +2008,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-13 13:43:09"
+            "time": "2015-02-26 16:16:43"
         },
         {
             "name": "kartik-v/yii2-widget-rangeinput",
@@ -2033,12 +2016,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-rangeinput.git",
-                "reference": "c507ccd98b97f6716f80481a2bb51836c2454ab6"
+                "reference": "900347a8d86c720c9b91af38fc4b01d21a6d4330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-rangeinput/zipball/c507ccd98b97f6716f80481a2bb51836c2454ab6",
-                "reference": "c507ccd98b97f6716f80481a2bb51836c2454ab6",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-rangeinput/zipball/900347a8d86c720c9b91af38fc4b01d21a6d4330",
+                "reference": "900347a8d86c720c9b91af38fc4b01d21a6d4330",
                 "shasum": ""
             },
             "require": {
@@ -2074,7 +2057,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:24:26"
+            "time": "2015-02-26 16:18:24"
         },
         {
             "name": "kartik-v/yii2-widget-rating",
@@ -2082,12 +2065,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-rating.git",
-                "reference": "a0385d9412c1977109063d3c9f4ede56f47fd2c1"
+                "reference": "48e9158f67c73722154db87d6a653d445d302dc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-rating/zipball/a0385d9412c1977109063d3c9f4ede56f47fd2c1",
-                "reference": "a0385d9412c1977109063d3c9f4ede56f47fd2c1",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-rating/zipball/48e9158f67c73722154db87d6a653d445d302dc8",
+                "reference": "48e9158f67c73722154db87d6a653d445d302dc8",
                 "shasum": ""
             },
             "require": {
@@ -2125,7 +2108,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:25:23"
+            "time": "2015-02-26 16:20:19"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
@@ -2133,12 +2116,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "d1a1d8dab94050bf6a52b166450acdacbac143be"
+                "reference": "3564f613b0666d1fc6349caa95e8bfc03abe9fc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/d1a1d8dab94050bf6a52b166450acdacbac143be",
-                "reference": "d1a1d8dab94050bf6a52b166450acdacbac143be",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/3564f613b0666d1fc6349caa95e8bfc03abe9fc9",
+                "reference": "3564f613b0666d1fc6349caa95e8bfc03abe9fc9",
                 "shasum": ""
             },
             "require": {
@@ -2173,7 +2156,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-02 21:02:13"
+            "time": "2015-02-26 16:21:52"
         },
         {
             "name": "kartik-v/yii2-widget-sidenav",
@@ -2181,12 +2164,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-sidenav.git",
-                "reference": "371bb89c3e58e1d346c37b9c1f67c3e42536f8f5"
+                "reference": "33063d5542a82a1b89e6e4ab838796fb742b98df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-sidenav/zipball/371bb89c3e58e1d346c37b9c1f67c3e42536f8f5",
-                "reference": "371bb89c3e58e1d346c37b9c1f67c3e42536f8f5",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-sidenav/zipball/33063d5542a82a1b89e6e4ab838796fb742b98df",
+                "reference": "33063d5542a82a1b89e6e4ab838796fb742b98df",
                 "shasum": ""
             },
             "require": {
@@ -2222,7 +2205,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:27:43"
+            "time": "2015-02-26 16:23:57"
         },
         {
             "name": "kartik-v/yii2-widget-spinner",
@@ -2230,12 +2213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-spinner.git",
-                "reference": "1e0073be9be94d8269d7ffb7125fd654ee7df57a"
+                "reference": "f993a8e338e9562bc404a71dc472c1c092c17dc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-spinner/zipball/1e0073be9be94d8269d7ffb7125fd654ee7df57a",
-                "reference": "1e0073be9be94d8269d7ffb7125fd654ee7df57a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-spinner/zipball/f993a8e338e9562bc404a71dc472c1c092c17dc6",
+                "reference": "f993a8e338e9562bc404a71dc472c1c092c17dc6",
                 "shasum": ""
             },
             "require": {
@@ -2270,7 +2253,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:28:55"
+            "time": "2015-02-26 16:24:30"
         },
         {
             "name": "kartik-v/yii2-widget-switchinput",
@@ -2278,12 +2261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-switchinput.git",
-                "reference": "f6fd88e978b526323538b62ffd9d8845a9799758"
+                "reference": "e2bc8938d4e63c1900237f9d8463c4644425a897"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-switchinput/zipball/f6fd88e978b526323538b62ffd9d8845a9799758",
-                "reference": "f6fd88e978b526323538b62ffd9d8845a9799758",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-switchinput/zipball/e2bc8938d4e63c1900237f9d8463c4644425a897",
+                "reference": "e2bc8938d4e63c1900237f9d8463c4644425a897",
                 "shasum": ""
             },
             "require": {
@@ -2320,7 +2303,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-14 16:27:26"
+            "time": "2015-02-26 16:25:48"
         },
         {
             "name": "kartik-v/yii2-widget-timepicker",
@@ -2328,12 +2311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-timepicker.git",
-                "reference": "cc044858903fc9ed19eb336e1495d1d313d38ba5"
+                "reference": "a537e6bb28538ded64b37130d30d39c53bfefbb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/cc044858903fc9ed19eb336e1495d1d313d38ba5",
-                "reference": "cc044858903fc9ed19eb336e1495d1d313d38ba5",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/a537e6bb28538ded64b37130d30d39c53bfefbb2",
+                "reference": "a537e6bb28538ded64b37130d30d39c53bfefbb2",
                 "shasum": ""
             },
             "require": {
@@ -2369,7 +2352,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:30:47"
+            "time": "2015-02-26 16:26:32"
         },
         {
             "name": "kartik-v/yii2-widget-touchspin",
@@ -2377,12 +2360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-touchspin.git",
-                "reference": "fd117e07c5dab1e5308cb8d75431269effb66212"
+                "reference": "036d936b4c8c0e86ba6a71b038487e4f250141d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-touchspin/zipball/fd117e07c5dab1e5308cb8d75431269effb66212",
-                "reference": "fd117e07c5dab1e5308cb8d75431269effb66212",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-touchspin/zipball/036d936b4c8c0e86ba6a71b038487e4f250141d8",
+                "reference": "036d936b4c8c0e86ba6a71b038487e4f250141d8",
                 "shasum": ""
             },
             "require": {
@@ -2419,7 +2402,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-12-04 12:53:04"
+            "time": "2015-02-26 16:27:25"
         },
         {
             "name": "kartik-v/yii2-widget-typeahead",
@@ -2427,12 +2410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-typeahead.git",
-                "reference": "29cf8e4cb504563666ce26055e98e0b63b5aea1a"
+                "reference": "346f792d8a25aa47d99e68d015ab819a1eb7f0b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-typeahead/zipball/29cf8e4cb504563666ce26055e98e0b63b5aea1a",
-                "reference": "29cf8e4cb504563666ce26055e98e0b63b5aea1a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-typeahead/zipball/346f792d8a25aa47d99e68d015ab819a1eb7f0b0",
+                "reference": "346f792d8a25aa47d99e68d015ab819a1eb7f0b0",
                 "shasum": ""
             },
             "require": {
@@ -2467,7 +2450,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-14 10:54:39"
+            "time": "2015-02-26 16:34:04"
         },
         {
             "name": "kartik-v/yii2-widgets",
@@ -2475,12 +2458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widgets.git",
-                "reference": "ce3e2835c1f0e04be89bb2bd6b72e2245672e5eb"
+                "reference": "ec147a73b5d4f4a20aaaea2ae2c63e6a0cb0bfa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/ce3e2835c1f0e04be89bb2bd6b72e2245672e5eb",
-                "reference": "ce3e2835c1f0e04be89bb2bd6b72e2245672e5eb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/ec147a73b5d4f4a20aaaea2ae2c63e6a0cb0bfa7",
+                "reference": "ec147a73b5d4f4a20aaaea2ae2c63e6a0cb0bfa7",
                 "shasum": ""
             },
             "require": {
@@ -2529,20 +2512,20 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-10 04:57:44"
+            "time": "2015-02-26 16:21:10"
         },
         {
             "name": "michelf/php-markdown",
-            "version": "dev-lib",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "1b5a30e13974b490964a1610bab5958e83cd4b69"
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/1b5a30e13974b490964a1610bab5958e83cd4b69",
-                "reference": "1b5a30e13974b490964a1610bab5958e83cd4b69",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
                 "shasum": ""
             },
             "require": {
@@ -2565,22 +2548,22 @@
             ],
             "authors": [
                 {
-                    "name": "Michel Fortin",
-                    "email": "michel.fortin@michelf.ca",
-                    "homepage": "http://michelf.ca/",
-                    "role": "Developer"
-                },
-                {
                     "name": "John Gruber",
                     "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP Markdown",
-            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
             "keywords": [
                 "markdown"
             ],
-            "time": "2014-12-08 02:09:55"
+            "time": "2015-03-01 12:03:08"
         },
         {
             "name": "michelf/php-smartypants",
@@ -2643,12 +2626,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orcsis/yii2-admin.git",
-                "reference": "eb52c788953ed8ab5cfaaf27f3a42916c38a8069"
+                "reference": "472f7578a78a76e03025a2fb9ecef74156f02ea2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orcsis/yii2-admin/zipball/eb52c788953ed8ab5cfaaf27f3a42916c38a8069",
-                "reference": "eb52c788953ed8ab5cfaaf27f3a42916c38a8069",
+                "url": "https://api.github.com/repos/orcsis/yii2-admin/zipball/472f7578a78a76e03025a2fb9ecef74156f02ea2",
+                "reference": "472f7578a78a76e03025a2fb9ecef74156f02ea2",
                 "shasum": ""
             },
             "require": {
@@ -2680,7 +2663,7 @@
                 "auth",
                 "yii"
             ],
-            "time": "2015-01-21 12:21:41"
+            "time": "2015-03-03 16:04:11"
         },
         {
             "name": "orcsis/yii2-orcsis",
@@ -2688,12 +2671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orcsis/yii2-orcsis.git",
-                "reference": "72a74332d8c0e61f439e3106216fcaec7077466e"
+                "reference": "7da33dc906044695fb8704418a0797a1739ff012"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orcsis/yii2-orcsis/zipball/72a74332d8c0e61f439e3106216fcaec7077466e",
-                "reference": "72a74332d8c0e61f439e3106216fcaec7077466e",
+                "url": "https://api.github.com/repos/orcsis/yii2-orcsis/zipball/7da33dc906044695fb8704418a0797a1739ff012",
+                "reference": "7da33dc906044695fb8704418a0797a1739ff012",
                 "shasum": ""
             },
             "require": {
@@ -2721,7 +2704,7 @@
                 "orcsis",
                 "yii"
             ],
-            "time": "2015-01-21 12:28:20"
+            "time": "2015-03-03 16:06:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2821,12 +2804,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "ca6b253bfd8278232eefafbc62eeb0eeddb52735"
+                "reference": "9c1bedd5df4ff12ffd0a60f06e5dc25f8f2c4ad5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ca6b253bfd8278232eefafbc62eeb0eeddb52735",
-                "reference": "ca6b253bfd8278232eefafbc62eeb0eeddb52735",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/9c1bedd5df4ff12ffd0a60f06e5dc25f8f2c4ad5",
+                "reference": "9c1bedd5df4ff12ffd0a60f06e5dc25f8f2c4ad5",
                 "shasum": ""
             },
             "require": {
@@ -2836,7 +2819,6 @@
                 "bower-asset/yii2-pjax": ">=2.0.1",
                 "cebe/markdown": "~1.0.0",
                 "ext-mbstring": "*",
-                "ext-mcrypt": "*",
                 "ezyang/htmlpurifier": "4.6.*",
                 "lib-pcre": "*",
                 "php": ">=5.4.0",
@@ -2902,7 +2884,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-02 17:27:27"
+            "time": "2015-03-03 06:39:27"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2910,12 +2892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "d6daff0dc635c87659754b16107843501355eae3"
+                "reference": "9db3d6525dad13f2171e40e13e53052183c8f2da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/d6daff0dc635c87659754b16107843501355eae3",
-                "reference": "d6daff0dc635c87659754b16107843501355eae3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/9db3d6525dad13f2171e40e13e53052183c8f2da",
+                "reference": "9db3d6525dad13f2171e40e13e53052183c8f2da",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2930,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-01-20 08:53:09"
+            "time": "2015-03-01 06:24:14"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -2956,12 +2938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "7f21221ee85862c83f60c8f74a267e29c9dc6336"
+                "reference": "ad3df6e918cada0369bd4f831a976b1f8c97ad70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/7f21221ee85862c83f60c8f74a267e29c9dc6336",
-                "reference": "7f21221ee85862c83f60c8f74a267e29c9dc6336",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/ad3df6e918cada0369bd4f831a976b1f8c97ad70",
+                "reference": "ad3df6e918cada0369bd4f831a976b1f8c97ad70",
                 "shasum": ""
             },
             "require": {
@@ -2995,7 +2977,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2015-01-11 03:59:50"
+            "time": "2015-03-01 06:24:14"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -3003,12 +2985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-jui.git",
-                "reference": "38284e5cf623961cd71ada0f272174043b38f7a8"
+                "reference": "cabc0e8c4c56323fa35abe12214e724e67e4bb0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/38284e5cf623961cd71ada0f272174043b38f7a8",
-                "reference": "38284e5cf623961cd71ada0f272174043b38f7a8",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/cabc0e8c4c56323fa35abe12214e724e67e4bb0b",
+                "reference": "cabc0e8c4c56323fa35abe12214e724e67e4bb0b",
                 "shasum": ""
             },
             "require": {
@@ -3041,7 +3023,7 @@
                 "jQuery UI",
                 "yii2"
             ],
-            "time": "2015-01-11 03:59:50"
+            "time": "2015-03-03 16:57:18"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -3049,12 +3031,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "e702187bb958f759c849684222ac98c4c1b08dba"
+                "reference": "dc817c787fc2a28bb09c1c69c9160e27cced86aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/e702187bb958f759c849684222ac98c4c1b08dba",
-                "reference": "e702187bb958f759c849684222ac98c4c1b08dba",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/dc817c787fc2a28bb09c1c69c9160e27cced86aa",
+                "reference": "dc817c787fc2a28bb09c1c69c9160e27cced86aa",
                 "shasum": ""
             },
             "require": {
@@ -3091,7 +3073,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2015-01-11 03:59:50"
+            "time": "2015-03-01 06:24:14"
         }
     ],
     "packages-dev": [
@@ -3113,9 +3095,9 @@
                 "bower-asset/jquery": ">=1.7"
             },
             "require-dev": {
-                "bower-asset/jasmine-ajax": ">=1.3.1,<1.4",
-                "bower-asset/jasmine-jquery": ">=1.5.2,<1.6",
-                "bower-asset/jquery": ">=1.7,<1.8"
+                "bower-asset/jasmine-ajax": "~1.3.1",
+                "bower-asset/jasmine-jquery": "~1.5.2",
+                "bower-asset/jquery": "~1.7"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -3128,12 +3110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "81e4eccea302300ac0c69c7ed04c94e29f580633"
+                "reference": "40426f77f030b6fb45951be920ff1036b2f423d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/81e4eccea302300ac0c69c7ed04c94e29f580633",
-                "reference": "81e4eccea302300ac0c69c7ed04c94e29f580633",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/40426f77f030b6fb45951be920ff1036b2f423d2",
+                "reference": "40426f77f030b6fb45951be920ff1036b2f423d2",
                 "shasum": ""
             },
             "require": {
@@ -3172,7 +3154,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-01-27 08:16:46"
+            "time": "2015-02-27 08:30:07"
         },
         {
             "name": "jamband/yii2-schemadump",
@@ -3259,12 +3241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-codeception.git",
-                "reference": "036ec922a1d080f2d7e81bece0b499717a6562d6"
+                "reference": "b97b917082846708c5c8db4e8a03ee1559ee3b0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/036ec922a1d080f2d7e81bece0b499717a6562d6",
-                "reference": "036ec922a1d080f2d7e81bece0b499717a6562d6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/b97b917082846708c5c8db4e8a03ee1559ee3b0d",
+                "reference": "b97b917082846708c5c8db4e8a03ee1559ee3b0d",
                 "shasum": ""
             },
             "require": {
@@ -3296,7 +3278,7 @@
                 "codeception",
                 "yii2"
             ],
-            "time": "2015-01-24 08:47:11"
+            "time": "2015-03-01 06:24:14"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -3304,12 +3286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "fa92dcf066205df00614adf38cf3ec9188f9a9c8"
+                "reference": "52ee8e7f8b70ab7fb80b0cec147f3bc222d2f607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/fa92dcf066205df00614adf38cf3ec9188f9a9c8",
-                "reference": "fa92dcf066205df00614adf38cf3ec9188f9a9c8",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/52ee8e7f8b70ab7fb80b0cec147f3bc222d2f607",
+                "reference": "52ee8e7f8b70ab7fb80b0cec147f3bc222d2f607",
                 "shasum": ""
             },
             "require": {
@@ -3343,7 +3325,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-01-20 18:08:25"
+            "time": "2015-03-01 06:24:14"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -3351,12 +3333,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-faker.git",
-                "reference": "fc93dd57b8fcff21ecb68c76b539d78a1cd80c55"
+                "reference": "3e2e40e9b6a62a6dd2d62e0aaa1af24dbb46b83c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/fc93dd57b8fcff21ecb68c76b539d78a1cd80c55",
-                "reference": "fc93dd57b8fcff21ecb68c76b539d78a1cd80c55",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/3e2e40e9b6a62a6dd2d62e0aaa1af24dbb46b83c",
+                "reference": "3e2e40e9b6a62a6dd2d62e0aaa1af24dbb46b83c",
                 "shasum": ""
             },
             "require": {
@@ -3390,7 +3372,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2015-01-11 03:59:50"
+            "time": "2015-03-01 06:24:14"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -3398,12 +3380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "f8b3959383b99697835e7a5887da7c5c0a5eee7d"
+                "reference": "4c3cfc0aaf88eb5495665b53e79621c9a175147a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/f8b3959383b99697835e7a5887da7c5c0a5eee7d",
-                "reference": "f8b3959383b99697835e7a5887da7c5c0a5eee7d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/4c3cfc0aaf88eb5495665b53e79621c9a175147a",
+                "reference": "4c3cfc0aaf88eb5495665b53e79621c9a175147a",
                 "shasum": ""
             },
             "require": {
@@ -3439,7 +3421,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-01-24 14:34:00"
+            "time": "2015-03-01 06:24:14"
         }
     ],
     "aliases": [],
@@ -3456,9 +3438,7 @@
         "kartik-v/yii2-password": 20,
         "warrence/yii2-kartikgii": 20,
         "kartik-v/yii2-mpdf": 20,
-        "bower-asset/angular": 0,
-        "bower-asset/angular-animate": 0,
-        "bower-asset/angular-aria": 0
+        "fxp/composer-asset-plugin": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

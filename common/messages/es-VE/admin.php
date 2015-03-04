@@ -22,5 +22,7 @@ return [
 	'Osusuarios' => 'Usuarios',
 	'Reset List' => 'Limpiar filtros',
 	'Select Photo' => 'Seleccionar Imagen',
-	'Change Password' => 'Cambiar Contraseña'
+	'Change Password' => 'Cambiar Contraseña',
+	'Password' => 'Contraseña',
+	'Summit' => 'Enviar'
 ];
