@@ -33,9 +33,11 @@ return [
             'errorAction' => 'site/error',
         ],*/
     	'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'soylaclavequesenecesita',
-    		'enableCookieValidation' => false,
+            'class' => '\yii\web\Request',
+            'enableCookieValidation' => false,
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],
         ],
     'urlManager' => [
     	'enablePrettyUrl' => true,
@@ -43,7 +45,8 @@ return [
     	'showScriptName' => false,
     	'rules' => [
         	['class' => 'yii\rest\UrlRule',
-        	 'controller' => 'user',
+        	 'controller' => ['login','osempresa'],
+             //'except' => ['delete', 'create', 'update','optios','index'],
         	 'extraPatterns' => [
         						'POST login' => 'login',
 				],
@@ -51,14 +54,23 @@ return [
     	],
 	]
     ],
+    'as authenticator' => [
+        'class' => 'orcsis\components\HttpAuth',
+        'allowActions' => [
+            'debug/*',
+            'login/*',
+        ]
+    ],
 	'as access' => [
 		'class' => 'orcsis\admin\components\AccessControl',
 		'allowActions' => [
 			'debug/*',
-			'site/login',
-			'site/logout',
-			'user/login', // add or remove allowed actions to this list
+			'login/*',
+            'login/logout', // add or remove allowed actions to this list
 		]
 	],
+    'as corsFilter' => [
+        'class' => 'yii\filters\Cors',
+    ],
     'params' => $params,
 ];

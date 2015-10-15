@@ -57,7 +57,12 @@ class LoginForm extends Model
         	if($log){
         		$user = $this->getUser();
         		$user->usu_ulting = date('Y-m-d H:i:s');
-				$user->update(array('usu_ulting'));
+                //$user->generaToken();
+				//$user->update(array('usu_ulting','usu_token'));
+                $user->update(array('usu_ulting'));
+                if($this->rememberMe){
+                    Yii::$app->session->setFlash('SelEmpresa',true);
+                }
         	}
             return $log;
         } else {

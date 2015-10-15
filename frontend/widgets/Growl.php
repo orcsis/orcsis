@@ -18,7 +18,7 @@ namespace frontend\widgets;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @author Alexander Makarov <sam@rmcreative.ru>
  */
-class Alert extends \yii\bootstrap\Widget
+class Growl extends \yii\bootstrap\Widget
 {
     /**
      * @var array the alert types configuration for the flash messages.
@@ -27,12 +27,13 @@ class Alert extends \yii\bootstrap\Widget
      * - $value is the bootstrap alert type (i.e. danger, success, info, warning)
      */
     public $alertTypes = [
-        'error'   => 'alert-danger',
-        'danger'  => 'alert-danger',
-        'success' => 'alert-success',
-        'info'    => 'alert-info',
-        'warning' => 'alert-warning',
-        'primary' => 'bg-primary'
+        'error'   => \kartik\widgets\Growl::TYPE_DANGER,
+        'danger'  => \kartik\widgets\Growl::TYPE_DANGER,
+        'success' => \kartik\widgets\Growl::TYPE_SUCCESS,
+        'info'    => \kartik\widgets\Growl::TYPE_INFO,
+        'warning' => \kartik\widgets\Growl::TYPE_WARNING,
+        'primary' => \kartik\widgets\Growl::TYPE_GROWL,
+        'growl'   => \kartik\widgets\Growl::TYPE_GROWL
     ];
 
     /**
@@ -45,7 +46,8 @@ class Alert extends \yii\bootstrap\Widget
         'success' => 'glyphicon glyphicon-ok-sign',
         'info'    => 'glyphicon glyphicon-info-sign',
         'warning' => 'glyphicon glyphicon-exclamation-sign',
-        'primary' => 'glyphicon glyphicon-exclamation-sign'
+        'primary' => 'glyphicon glyphicon-exclamation-sign',
+        'growl'   => 'glyphicon glyphicons-message-flag'
     ];
 
     /**
@@ -58,7 +60,8 @@ class Alert extends \yii\bootstrap\Widget
         'success' => 'Success',
         'info'    => 'Info',
         'warning' => 'Warning',
-        'primary' => 'Info'
+        'primary' => 'Info',
+        'growl'   => 'Info'
     ];
 
     /**
@@ -82,7 +85,7 @@ class Alert extends \yii\bootstrap\Widget
                 /* assign unique id to each alert box */
                 $this->options['id'] = $this->getId() . '-' . $type;
 
-                echo \kartik\widgets\Alert::widget([
+                echo \kartik\widgets\Growl::widget([
                     'type' => $this->alertTypes[$type],
                     'icon' => $this->alertIcons[$type],
                     'title' => \Yii::t('app',$this->alertTitle[$type]),
@@ -90,7 +93,15 @@ class Alert extends \yii\bootstrap\Widget
                     'body' => $message,
                     'closeButton' => $this->closeButton,
                     'options' => $this->options,
-                    'delay' => isset(\Yii::$app->params['AlertDelay']) ? \Yii::$app->params['AlertDelay'] : false,
+                    //'delay' => isset(\Yii::$app->params['AlertDelay']) ? \Yii::$app->params['AlertDelay'] : false,
+                    'pluginOptions' => [
+                        'delay' => isset(\Yii::$app->params['AlertDelay']) ? \Yii::$app->params['AlertDelay'] : false,
+                        'placement' => [
+                            'from' => 'bottom',
+                            'align'=> 'right'
+                        ],
+                    ],
+                    'delay' => false,
                 ]);
 
                 $session->removeFlash($type);

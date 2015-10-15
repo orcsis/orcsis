@@ -6,4 +6,5 @@ return [
     'icon-framework' => 'fa',  // Font Awesome Icon framework
     'moduleActive' => ['module' => 'app-frontend','name' => 'Dashboard'], //Modulo iniciado por defecto para los menús
     'assetUrl' => '/frontend/assets/',
+    'AlertDelay' => 10000,
 ];

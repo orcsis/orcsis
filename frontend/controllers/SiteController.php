@@ -46,6 +46,10 @@ class SiteController extends Controller
                     'logout' => ['post'],
                 ],
             ],
+            'empresa' => [
+                'class' => 'orcsis\components\EmpresaControl',
+                'only' => ['sel-empresa'],
+            ],
         ];
     }
 
@@ -70,6 +74,22 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    function actionSelEmpresa()
+    {
+        $request = Yii::$app->request;
+        if ($request->isPost)
+        {
+            $post = $request->post();
+            if (isset($post['usu_empresa']) && $post['usu_empresa'] != ''){
+                $user = Yii::$app->user->getidentity();
+                $user->setEmpresa($post['usu_empresa']);
+                $user->save();
+            }
+        }
+        
+        return $this->goHome();
+    }
+
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
@@ -78,7 +98,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->goBack();   
         } else {
             return $this->render('login', [
                 'model' => $model,

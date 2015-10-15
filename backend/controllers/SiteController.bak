@@ -6,14 +6,13 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
+use yii\web\Response;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-
-    public $enableCsrfValidation = false;
 
     /**
      * @inheritdoc
@@ -39,7 +38,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
-                    //'login' => ['post'],
+                    'login' => ['post'],
                 ],
             ],
         ];
@@ -62,10 +61,16 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    /**
+     * Realiza el login y retorna el token de autenticación
+     * Usuario y contraseña por POST requerido
+     * @return \yii\db\ActiveRecordInterface usuario que será utilizado
+     */
     public function actionLogin()
     {
 
-        $data = Yii::$app->request->post();
+        \Yii::error("Llego a la acción");
+        $data = \Yii::$app->getRequest()->getBodyParams();
         $model = new LoginForm();
         $mod = $model->load($data, '');
         //var_dump($model);
@@ -79,10 +84,7 @@ class SiteController extends Controller
             $user->generaToken();
             $update = $user->update();
             \Yii::trace('Actualizo: '.$update.' Token Generado: '.$user->usu_token);
-
-            $this->setHeader(200);
-            echo json_encode(array('status'=>1,'data'=>array_filter($user->attributes)),JSON_PRETTY_PRINT);
-            //return $user;
+            return $user;
         }
     }
 
@@ -92,29 +94,4 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
-
-    private function setHeader($status)
-  {
- 
-      $status_header = 'HTTP/1.1 ' . $status . ' ' . $this->_getStatusCodeMessage($status);
-      $content_type="application/json; charset=utf-8";
- 
-      header($status_header);
-      header('Content-type: ' . $content_type);
-      header('X-Powered-By: ' . "Orcsis <orcsis.com.ve>");
-  }
-  private function _getStatusCodeMessage($status)
-  {
-      $codes = Array(
-      200 => 'OK',
-      400 => 'Bad Request',
-      401 => 'Unauthorized',
-      402 => 'Payment Required',
-      403 => 'Forbidden',
-      404 => 'Not Found',
-      500 => 'Internal Server Error',
-      501 => 'Not Implemented',
-      );
-      return (isset($codes[$status])) ? $codes[$status] : '';
-  }
 }

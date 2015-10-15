@@ -33,6 +33,10 @@ return [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'soylaclavequesenecesita',
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
     ],
 	'as access' => [
 		'class' => 'orcsis\admin\components\AccessControl',

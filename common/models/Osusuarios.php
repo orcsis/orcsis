@@ -35,7 +35,7 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
 	const ESTADO_INACTIVO = 0;
 	const ESTADO_SUSPENDIDO = 2;
 	public $uploadedFile;
-	public $roles;
+	public $usu_roles;
     public $passwd;
 	
     /**
@@ -61,7 +61,8 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
         	[['uploadedFile','passwd'], 'safe'],
             [['uploadedFile'], 'file', 'mimeTypes' => 'image/jpeg, image/gif, image/png'],
             [['usu_nomusu', 'usu_nombre', 'usu_clave', 'usu_name', 'usu_type', 'usu_size'], 'string', 'max' => 64],
-            [['usu_token', 'usu_ultemp'], 'string', 'max' => 45]
+            [['usu_ultemp'], 'integer'],
+            [['usu_token'], 'string', 'max' => 45]
         ];
     }
 
@@ -201,7 +202,7 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
      */
     public function generaToken()
     {
-    	$this->usu_token = Yii::$app->getSecurity()->generateRandomKey() . '_' . time();
+    	$this->usu_token = Yii::$app->security->generateRandomString() . '_' . time();
     }
     
     /**
@@ -242,16 +243,23 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
     {
     	$fields = parent::fields();
     	unset($fields['usu_clave']);
-    	$fields['roles'] = function(){ return $this->roles;};
+        //unset($fields['usu_foto']);
+        $fields['usu_foto'] = function ($model) { return base64_encode($model->usu_foto);};
     	return $fields;
     }
+
+    public function getOsempresa()
+    {
+        return $this->hasOne(Osempresas::className(), ['emp_codigo' => 'usu_ultemp']);
+    }
+    
     
     /**
      * Asigna la última empresa seleccionada
      */
     public function setEmpresa($empresa)
     {
-    	$this->usu_ultemp = $empresa;
+    	$this->usu_ultemp = $empresa == null ? null : intval($empresa);
     }
     
     /**
@@ -260,8 +268,8 @@ class Osusuarios extends ActiveRecord implements IdentityInterface
      */
     public function getRoles()
     {
-    	$this->roles = DbManager::getRolesByUser($this->usu_id);
-    	return $this->roles;
+    	$this->usu_roles = DbManager::getRolesByUser($this->usu_id);
+    	return $this->usu_roles;
     }
     
 }

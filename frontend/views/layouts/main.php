@@ -4,9 +4,15 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
+use frontend\widgets\Growl;
 use kartik\nav\NavX;
 use orcsis\admin\components\MenuHelper;
 use kartik\icons\Icon;
+use kartik\widgets\Select2;
+use kartik\widgets\ActiveForm;
+use yii\bootstrap\Modal;
+use common\models\Osempresas;
+
 Icon::map ( $this );
 
 /**
@@ -55,6 +61,36 @@ AppAsset::register ( $this );
 		NavBar::end ();
 		?>
     </header>
+    <?php
+    if(Yii::$app->session->hasFlash('SelEmpresa')){
+			Modal::begin([
+    			'options'=>['id'=>'selempresa-modal'],
+    			'header' => '<h4 style="margin:0; padding:0">' . Yii::t('app','Select Company') . '</h4>',
+    			'closeButton' => false,
+    			'toggleButton' =>false,
+    			'clientOptions'=>['show' => true, 'keyboard' => false, 'backdrop' => 'static'],
+			]);
+			$form = ActiveForm::begin([
+				'id' => 'SelEmpresa-form',
+				'type' => ActiveForm::TYPE_VERTICAL,
+				'action' => ['site/sel-empresa']
+			]);
+			echo Select2::widget([
+	    		'name' => 'usu_empresa',
+    			'data' => Osempresas::getEmpresas(),
+    			'options' => ['placeholder' => Yii::t('app','Select Company') . ' ...'],
+    			'pluginOptions' => [
+	        		'allowClear' => true
+    			],
+			]);
+			echo '<div class="modal-footer">';
+			echo Html::submitButton(Yii::t('app','Accept'), ['class' => 'btn btn-primary']);
+			echo '</div>';
+			ActiveForm::end();
+			Modal::end();
+		}
+	?>
+
 	<div class="wrapper row-offcanvas row-offcanvas-left">
 		
 		<?= Yii::$app->user->isGuest? '' : $this->render('sidemenu')?>
@@ -62,17 +98,17 @@ AppAsset::register ( $this );
 		<?= Yii::$app->user->isGuest? '' : $this->render('contentHeader')?>
 		<section class="content">
 				<div class="container">
-        		<?= Alert::widget()?>
+        		<?= Growl::widget()?>
         		<?= $content?>
         	</div>
 			</section>
 		</aside>
 	</div>
 	<footer id="footer" class="footer"
-		style="bottom: 0; left: 0; margin: 0; right: 0; position: fixed; z-index: 1000000; height: 40px; padding-top: 10px;">
+		style="bottom: 0; left: 0; margin: 0; right: 0; position: fixed; z-index: 1030; height: 40px; padding-top: 10px;">
 		<div class="container">
-			<p class="pull-left"><?= Yii::$app->params['moduleActive']['name'] ?></p>
-			<p class="pull-right">&copy; My Company <?= date('Y') ?></p>
+			<p class="pull-left"><?= date('d-m-Y') . " | " .Yii::$app->params['moduleActive']['name'] ?></p>
+			<p class="pull-right">&copy; <?= !Yii::$app->user->isGuest && isset(Yii::$app->user->identity->osempresa->emp_nombre) ? Yii::$app->user->identity->osempresa->emp_nombre : '' ?></p>
 		</div>
 	</footer>
 

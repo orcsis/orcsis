@@ -29,4 +29,8 @@ use orcsis\admin\components\MenuHelper;
 			]);
 			?>
 		</section>
+		<?php echo \kartik\widgets\Alert::widget(['type'=> \kartik\widgets\Alert::TYPE_INFO, 'body'=>Yii::$app->orcsis->getEmpVar('DIRFISCAL')]); ?>
+		<?php //$confemp = new \common\models\empresa\Confemp();
+			//echo $confemp->RIF;
+		//echo \orcsis\angularui\bootstrap\BootstrapExample::widget() ?>
 	</aside>

@@ -24,5 +24,13 @@ return [
 'Select Company' => 'Seleccionar Empresa',
 'Profile' => 'Perfil',
 'Hello' => 'Hola',
-'The requested page does not exist.' => 'La página solicitada no existe.'
+'The requested page does not exist.' => 'La página solicitada no existe.',
+'Accept' => 'Aceptar',
+'No access to companies or not created' => 'No tiene acceso a las empresas o no existen',
+'Error' => 'Error',
+'Danger' => 'Peligro',
+'Success' => 'Exitoso',
+'Info' => 'Información',
+'Warning' => 'Atención',
+'All companies' => 'Todas las empresas'
 ];
