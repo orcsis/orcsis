@@ -37,5 +37,6 @@ $config = [];
     $config['modules']['gridview'] = [ 'class' => '\kartik\grid\Module',
     								   
 									 ];
+    $config['modules']['utility'] = ['class' => 'c006\utility\migration\Module'];
 
 return $config;

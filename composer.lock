@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48c4c77dcc8c2199baf94b1aa862ff5e",
-    "content-hash": "d3c3d6c826179de5d7742e4fb8e25aea",
+    "hash": "1bc21d1c6ae94a48bc96b863563c2a10",
+    "content-hash": "05121e4e35a26414e9991415149233f2",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -251,6 +251,45 @@
                 "MIT"
             ],
             "time": "2015-01-22 20:06:42"
+        },
+        {
+            "name": "c006/yii2-migration-utility",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c006/yii2-migration-utility.git",
+                "reference": "a65a341c3456f30c5bad7f4a027a132d7d8a7d54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c006/yii2-migration-utility/zipball/a65a341c3456f30c5bad7f4a027a132d7d8a7d54",
+                "reference": "a65a341c3456f30c5bad7f4a027a132d7d8a7d54",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "c006\\utility\\migration\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Chambers",
+                    "email": "jchambers.dev@gmail.com"
+                }
+            ],
+            "description": "Automatically writes the create tables for migrations or create tables in general",
+            "keywords": [
+                "extension",
+                "migration",
+                "tables",
+                "yii2"
+            ],
+            "time": "2015-08-08 18:07:48"
         },
         {
             "name": "cebe/markdown",
@@ -954,7 +993,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/68160aec8610ad3a01899e98bd2b985a70a92436",
+                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/1fdc286434f1041bfa06373135d28ea575b07e81",
                 "reference": "68160aec8610ad3a01899e98bd2b985a70a92436",
                 "shasum": ""
             },
@@ -3540,7 +3579,8 @@
         "kartik-v/yii2-password": 20,
         "warrence/yii2-kartikgii": 20,
         "kartik-v/yii2-mpdf": 20,
-        "vilochane/yii2-barcode-generator": 20
+        "vilochane/yii2-barcode-generator": 20,
+        "c006/yii2-migration-utility": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -21,15 +21,15 @@ return [
                 ],
             ],
         ],
-		'controllerMap' => [
-			'migrate' => [
-				'class' => 'yii\console\controllers\MigrateController',
-				'templateFile' => '@vendor/jamband/yii2-schemadump/migrations/template.php',
-				],
-			'schemadump' => [
-				'class' => 'jamband\commands\SchemaDumpController',
-			],
-		],
     ],
+    'controllerMap' => [
+		'migrate' => [
+			'class' => 'yii\console\controllers\MigrateController',
+			'templateFile' => '@jamband/schemadump/template.php',
+			],
+		'schemadump' => [
+			'class' => 'jamband\schemadump\SchemaDumpController',
+		],
+	],
     'params' => $params,
 ];
