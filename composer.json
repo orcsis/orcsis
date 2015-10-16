@@ -30,7 +30,6 @@
 		"yiisoft/yii2-swiftmailer": "*",
 		"orcsis/yii2-admin": "dev-master",
 		"orcsis/yii2-orcsis": "dev-master",
-		"orcsis/yii2-angularui": "dev-master",
 		"kartik-v/yii2-widgets": "dev-master",
 		"kartik-v/yii2-builder": "dev-master",
 		"kartik-v/yii2-datecontrol": "dev-master",

@@ -4,29 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec0f7a0208e21a4a25223f770387dea2",
-    "content-hash": "9337878ed620651b15eb992db6f837e3",
+    "hash": "48c4c77dcc8c2199baf94b1aa862ff5e",
+    "content-hash": "d3c3d6c826179de5d7742e4fb8e25aea",
     "packages": [
-        {
-            "name": "bower-asset/angular",
-            "version": "v1.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/angular/bower-angular.git",
-                "reference": "34f023ddd2f1aa96b9df258a0bd9a71f36a26355"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/34f023ddd2f1aa96b9df258a0bd9a71f36a26355",
-                "reference": "34f023ddd2f1aa96b9df258a0bd9a71f36a26355",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "./angular.js",
-                "bower-asset-ignore": []
-            }
-        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.5",
@@ -2695,12 +2675,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orcsis/yii2-admin.git",
-                "reference": "fcddf174cc8814f91f7ef7e8faf1e00caf9e5cba"
+                "reference": "40842bd470c8e15039842ae2764b58684d27b43c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orcsis/yii2-admin/zipball/fcddf174cc8814f91f7ef7e8faf1e00caf9e5cba",
-                "reference": "fcddf174cc8814f91f7ef7e8faf1e00caf9e5cba",
+                "url": "https://api.github.com/repos/orcsis/yii2-admin/zipball/40842bd470c8e15039842ae2764b58684d27b43c",
+                "reference": "40842bd470c8e15039842ae2764b58684d27b43c",
                 "shasum": ""
             },
             "require": {
@@ -2732,46 +2712,7 @@
                 "auth",
                 "yii"
             ],
-            "time": "2015-03-04 20:35:33"
-        },
-        {
-            "name": "orcsis/yii2-angularui",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "/home/oliver/Proyectos/yii2-angularui",
-                "reference": "7e05b9010dc91b08172e713321b4d90559599565"
-            },
-            "require": {
-                "bower-asset/angular": "1.3.4@stable",
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-bootstrap": "@dev"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "orcsis\\angularui\\": ""
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Oliver Carreño",
-                    "email": "orcoliver@gmail.com"
-                }
-            ],
-            "description": "Implement AngularUI for Grids and Forms CRUD",
-            "keywords": [
-                " Angular",
-                " UI",
-                " angularJS",
-                " angularUI",
-                "extension",
-                "yii2"
-            ],
-            "time": "2015-05-12 14:22:52"
+            "time": "2015-10-15 20:56:40"
         },
         {
             "name": "orcsis/yii2-orcsis",
@@ -2779,12 +2720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orcsis/yii2-orcsis.git",
-                "reference": "f0bf07fb956c3946f9223bd94f093499f73981c8"
+                "reference": "48af8ce7819dfc67ded252012b060c90fcd57952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orcsis/yii2-orcsis/zipball/f0bf07fb956c3946f9223bd94f093499f73981c8",
-                "reference": "f0bf07fb956c3946f9223bd94f093499f73981c8",
+                "url": "https://api.github.com/repos/orcsis/yii2-orcsis/zipball/48af8ce7819dfc67ded252012b060c90fcd57952",
+                "reference": "48af8ce7819dfc67ded252012b060c90fcd57952",
                 "shasum": ""
             },
             "require": {
@@ -2812,7 +2753,7 @@
                 "orcsis",
                 "yii"
             ],
-            "time": "2015-03-04 20:36:49"
+            "time": "2015-10-15 20:59:33"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3314,20 +3255,20 @@
         },
         {
             "name": "jamband/yii2-schemadump",
-            "version": "v0.9.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jamband/yii2-schemadump.git",
-                "reference": "8d0409daf84a772beb15249178470145cbc2aaaa"
+                "reference": "356be62194bec47669f2078923eb5a781387f083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamband/yii2-schemadump/zipball/8d0409daf84a772beb15249178470145cbc2aaaa",
-                "reference": "8d0409daf84a772beb15249178470145cbc2aaaa",
+                "url": "https://api.github.com/repos/jamband/yii2-schemadump/zipball/356be62194bec47669f2078923eb5a781387f083",
+                "reference": "356be62194bec47669f2078923eb5a781387f083",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "*"
+                "yiisoft/yii2": "~2.0"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -3350,12 +3291,13 @@
             "homepage": "https://github.com/jamband/yii2-schemadump",
             "keywords": [
                 "command",
-                "extesion",
+                "database",
+                "extension",
                 "generator",
                 "migration",
                 "yii2"
             ],
-            "time": "2015-05-02 13:07:54"
+            "time": "2015-09-14 16:36:20"
         },
         {
             "name": "phpspec/php-diff",
@@ -3589,7 +3531,6 @@
     "stability-flags": {
         "orcsis/yii2-admin": 20,
         "orcsis/yii2-orcsis": 20,
-        "orcsis/yii2-angularui": 20,
         "kartik-v/yii2-widgets": 20,
         "kartik-v/yii2-builder": 20,
         "kartik-v/yii2-datecontrol": 20,

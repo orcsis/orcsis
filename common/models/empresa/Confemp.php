@@ -32,7 +32,7 @@ class Confemp extends DynamicModel
     public function getAttributeLabel($attribute)
     {
         $labels = $this->attributeLabels();
-        return isset($labels[$attribute]) ? $labels[$attribute] : (Yii::$app->orcsis->getEmoVarLabel() != null ?
+        return isset($labels[$attribute]) ? $labels[$attribute] : (Yii::$app->orcsis->getEmpVarLabel() != null ?
             Yii::$app->orcsis->getEmpVarLabel($attribute) : $this->generateAttributeLabel($attribute));
     }
 }
